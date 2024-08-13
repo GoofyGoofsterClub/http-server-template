@@ -10,6 +10,6 @@ COPY . .
 
 EXPOSE 3442
 
-RUN npx tsc && npx tsc-alias
+RUN npm run build && npm start
 
 CMD [ "node", "./dist/index.js" ]
